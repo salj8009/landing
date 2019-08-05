@@ -19,8 +19,17 @@ h3 {
   font-family: 'Squada One', cursive;
   font-size: 40px;
   margin-top: 3.5em;
-    margin-bottom: 2em;
+  margin-bottom: 2em;
   color: #FFFFFF; 
+}
+#cf {
+  color: black;
+  font-family: 'Squada One', cursive;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+ol {
+  list-style: decimal;
 }
 .texto {
   font-family: 'Montserrat', sans-serif;
