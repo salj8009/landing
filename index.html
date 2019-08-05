@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+ 
+<html lang="es">
+ 
+<head>
+<title>Conferencia web</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" href="css/estilos.css" />
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/favicon.ico" />
+</head>
+ 
+<body>
+	<div class="grid-container">
+	  <div class="areaUno">
+	  	<h1>Conferencia Web.</h1>
+	  		<div class="texto">
+			  	<p>Evento web con los <strong>mejores expertos</strong> de la industria.</p>
+			  	<p>Conoce las mejores tecnicas, comparte experiencias , <strong>tips y consejos</strong> para tu dia a dia como developer.</p>
+		  	</div>
+	  </div>
+	  <div class="areaDos">
+	  	<h3>Participa con nosotros suscribete.</h3>
+			<form id="formulario">
+				<input id="miNombre" class="ingresaDatos" type="text" placeholder="Ingresa tu Nomnbre completo."></br>
+				<input id="miCorreo" class="ingresaDatos" type="email" placeholder="Ingresa tu correo."></br>
+				<button id="miBoton" onclick="guarda()">Enviar.</button>
+			</form>
+	  </div>
+	</div>
+	
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->     
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+
+<script src="js/app.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+</body>
+</html>
