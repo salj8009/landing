@@ -10,6 +10,10 @@
 .areaUno { grid-area: areaUno; 
   background-color: #FFFFFF;
 }
+#logo {
+    height: 50%;
+    float: right;
+}
 h1 {
   font-family: 'Squada One', cursive;
   font-size: 136px;
@@ -30,6 +34,7 @@ h3 {
 }
 ol {
   list-style: decimal;
+  line-height:1.6em;
 }
 .texto {
   font-family: 'Montserrat', sans-serif;
