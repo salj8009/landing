@@ -9,14 +9,15 @@
 }
 .areaUno { grid-area: areaUno; 
   background-color: #FFFFFF;
+  height: 100vh;
 }
 #logo {
-    height: 50%;
+    height: 25%;
     float: right;
 }
 h1 {
   font-family: 'Squada One', cursive;
-  font-size: 136px;
+  font-size: 8vw;
   margin: .2em;
 }
 h3 {
@@ -63,7 +64,7 @@ strong {
 }
 
 .areaDos { grid-area: areaDos; 
-  background-image: url("developer-coding-in-php.jpg");
+  background-image: url("../img/crowd-participating-at-event.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -81,7 +82,6 @@ strong {
     padding: 1em;
     width: 50%;
 }
-
 
 
 
