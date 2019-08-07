@@ -28,12 +28,29 @@ h3 {
   margin-bottom: 2em;
   color: #FFFFFF; 
 }
-#cf, a {
+:root {
+  --mainColor: #ff9800;
+}
+#cf, a{
   color: #006232;
   font-family: 'Squada One', cursive;
   margin-top: 1em;
   margin-bottom: 1em;
+  text-shadow:1px 2px 2px #000000;
+  text-decoration: none;
 }
+
+a:hover {
+  background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent
+     );
+}
+
+
 ol {
   list-style: decimal;
   line-height:1.6em;
