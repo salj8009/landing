@@ -1,6 +1,5 @@
-
   // Your web app's Firebase configuration
- var firebaseConfig = {
+  var firebaseConfig = {
     apiKey: "AIzaSyD97mRaT6p5Mm_-zrKXh577O6e6LOhGkYc",
     authDomain: "milandingpagejsl.firebaseapp.com",
     databaseURL: "https://milandingpagejsl.firebaseio.com",
@@ -11,7 +10,6 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-
  // Get a reference to the database service
 var database = firebase.database();
 
