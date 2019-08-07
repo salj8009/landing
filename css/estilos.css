@@ -40,7 +40,7 @@ h3 {
   text-decoration: none;
 }
 
-a:hover {
+#cf, a:hover {
   background:
      linear-gradient(
        to right,

@@ -63,3 +63,4 @@ Swal.fire(
     document.getElementById('formulario').reset();
 
 }
+
