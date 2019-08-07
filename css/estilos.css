@@ -11,6 +11,7 @@
   background-color: #FFFFFF;
   height: 100vh;
 }
+
 #logo {
     height: 25%;
     float: right;
@@ -28,7 +29,7 @@ h3 {
   color: #FFFFFF; 
 }
 #cf {
-  color: black;
+  color: #006232;
   font-family: 'Squada One', cursive;
   margin-top: 1em;
   margin-bottom: 1em;
