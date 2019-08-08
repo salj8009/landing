@@ -12,9 +12,9 @@
   height: 100vh;
 }
 
-#logo {
-    height: 25%;
-    float: right;
+.logo {
+    height: 15%;
+
 }
 h1 {
   font-family: 'Squada One', cursive;
@@ -31,7 +31,7 @@ h3 {
 :root {
   --mainColor: #ff9800;
 }
-#cf, a{
+ a{
   color: #006232;
   font-family: 'Squada One', cursive;
   margin-top: 1em;
