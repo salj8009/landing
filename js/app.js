@@ -53,11 +53,22 @@ function guarda() {
         );
 
  
-Swal.fire(
+/*Swal.fire(
   'Gracias por tu interes!',
   'estaremos en contacto contigo!',
   'success'
-)
+) */
+
+ Swal.fire({
+  title: '<strong>Gracias por tu interes!</strong>',
+  type: 'info',
+  html:
+    '<h3 id="cf"><a href="http://neuroestrategias.com/html/aonc.html" target="_blank">Más Información.</a></h3>' ,
+
+  showCloseButton: true,
+  focusConfirm: false,
+
+}) 
 
     //con esto se limpia el formulario
     document.getElementById('formulario').reset();
