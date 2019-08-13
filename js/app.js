@@ -22,10 +22,10 @@ var formulario = document.getElementById('formulario');
 formulario.addEventListener("submit", my_func, true);
 
 //funcion que obtiene los datos del formulario
-     var miNombre = "";
+/*     var miNombre = "";
      var miCorreo = "";
      var nombre;
-     var correo;
+     var correo; */
 function datos(){
 
 
@@ -41,11 +41,13 @@ function datos(){
 
 
 //se invocca la funcion
- datos();
+ datos(); 
 
 function guarda() {
+
+
   //se crea el registro en la base
-        var mailsRef = firebase.database().ref('prospecto').push().set(
+        var mailsRef = firebase.database().ref('prospectos').push().set(
             {
                 nombre: nombre.value,
                 correo: correo.value
@@ -66,7 +68,7 @@ function guarda() {
     '<h3 id="cf"><a href="http://neuroestrategias.com/html/aonc.html" target="_blank">Más Información.</a></h3>' ,
 
   showCloseButton: true,
-  focusConfirm: false,
+ // focusConfirm: false,
 
 }) 
 
