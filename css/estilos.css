@@ -17,9 +17,10 @@
 
 }
 h1 {
-  font-family: 'Squada One', cursive;
-  font-size: 8vw;
-  margin: .2em;
+    font-family: 'Squada One', cursive;
+    font-size: 6vw;
+    margin: .2em;
+    text-align: center;
 }
 h3 {
   font-family: 'Squada One', cursive;
