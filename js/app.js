@@ -22,10 +22,10 @@ var formulario = document.getElementById('formulario');
 formulario.addEventListener("submit", my_func, true);
 
 //funcion que obtiene los datos del formulario
-/*     var miNombre = "";
+     var miNombre = "";
      var miCorreo = "";
      var nombre;
-     var correo; */
+     var correo; 
 function datos(){
 
 
@@ -33,8 +33,14 @@ function datos(){
     if (document.getElementById('miNombre') != null) {
         nombre = document.getElementById("miNombre");
     }
+    else {
+      alert("no puede ir vacio el campo");
+    }
     if (document.getElementById('miCorreo') != null) {
        correo = document.getElementById("miCorreo");
+    }
+    else {
+      alert("no puede ir vacio el correo");
     }
 
 }
@@ -44,6 +50,7 @@ function datos(){
  datos(); 
 
 function guarda() {
+
 
 
   //se crea el registro en la base
