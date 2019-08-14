@@ -92,7 +92,8 @@ function guarda() {
  nombre = document.getElementById("miNombre").value;
  correo = document.getElementById("miCorreo").value;
   if ( nombre == null || nombre.length == 0 || /^\s+$/.test(nombre) && !(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(correo))) {
-    return false;
+    //return false;
+   return Swal.fire('Oops...', 'Ingresa los datos que se indican', 'error')
   } else{
   //se crea el registro en la base
         var mailsRef = firebase.database().ref('prospectos').push().set(
