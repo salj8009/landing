@@ -70,11 +70,11 @@ function guarda() {
 
  Swal.fire({
   title: '<strong>Gracias por tu interes!</strong>',
-  type: 'info',
+  //type: 'info',
   html:
     '<h3 id="cf"><a href="http://neuroestrategias.com/html/aonc.html" target="_blank">Más Información.</a></h3>' ,
 
-  showCloseButton: true,
+ // showCloseButton: true,
  // focusConfirm: false,
 
 }) 
