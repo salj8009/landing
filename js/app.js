@@ -22,15 +22,17 @@ var formulario = document.getElementById('formulario');
 formulario.addEventListener("submit", my_func, true);
 
 //funcion que obtiene los datos del formulario
-     var miNombre = "";
+/*     var miNombre = "";
      var miCorreo = "";
      var nombre;
-     var correo; 
-function datos(){
+     var correo; */
+
+
+//function datos(){
 
 
      
-    if (document.getElementById('miNombre') != null) {
+/*    if (document.getElementById('miNombre') != null) {
         nombre = document.getElementById("miNombre");
     }
     else {
@@ -41,23 +43,62 @@ function datos(){
     }
     else {
       alert("no puede ir vacio el correo");
-    }
+    } */
+ /*   
+    var nombre = document.getElementById('miNombre');
+    var correo = document.getElementById('miCorreo');
 
-}
+    nombre.addEventListener("keyup", function(event){
+      if (nombre.validity.valid) {
+        console.log("correcto");
+      };
+    }, false);
+
+    correo.addEventListener("keyup", function(event){
+      if (nombre.validity.valid) {
+        console.log("correcto");
+      };
+    }, false); */
+
+//}
 
 
 //se invocca la funcion
- datos(); 
+ //datos(); 
+
+/*  nombre = document.getElementById("miNombre").value;
+  if ( nombre == null || nombre.length == 0 || /^\s+$/.test(nombre)) {
+    return false;
+  };
+
+correo = document.getElementById("miCorreo").value;
+if( !(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(correo)) ) {
+  return false;
+  } */
+/*function prueba() {
+ nombre = document.getElementById("miNombre").value;
+ correo = document.getElementById("miCorreo").value;
+  if ( nombre == null || nombre.length == 0 || /^\s+$/.test(nombre) && !(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(correo))) {
+    return false;
+  } else{
+    alert("ok");
+  };
+
+}*/
+
 
 function guarda() {
 
-
-
+ nombre = document.getElementById("miNombre").value;
+ correo = document.getElementById("miCorreo").value;
+  if ( nombre == null || nombre.length == 0 || /^\s+$/.test(nombre) && !(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(correo))) {
+    return false;
+  } else{
   //se crea el registro en la base
         var mailsRef = firebase.database().ref('prospectos').push().set(
             {
-                nombre: nombre.value,
-                correo: correo.value
+                nombre: nombre,
+                correo: correo
             }
         );
 
@@ -74,13 +115,13 @@ function guarda() {
   html:
     '<h3 id="cf"><a href="http://neuroestrategias.com/html/aonc.html" target="_blank">Más Información.</a></h3>' ,
 
- // showCloseButton: true,
+  showCloseButton: true,
  // focusConfirm: false,
 
 }) 
 
     //con esto se limpia el formulario
     document.getElementById('formulario').reset();
-
+  };
 }
 
