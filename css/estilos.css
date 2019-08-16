@@ -29,6 +29,13 @@ h1 {
     margin: .2em;
     text-align: center;
 }
+h2 {
+  font-family: 'Squada One', cursive;
+  text-align: center;
+  font-size: 2.7em;
+  margin: .5em;
+}
+
 h3 {
   font-family: 'Squada One', cursive;
   font-size: 40px;
@@ -69,8 +76,9 @@ ul, li {
   font-size: 2em;
 }
 .txtParrafo {
-  margin-bottom: 1em;
+  margin-top: 1em;
 }
+
 .textoAreaDos {
   font-family: 'Montserrat', sans-serif;
   margin: 1.5em;
