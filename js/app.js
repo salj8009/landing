@@ -114,7 +114,8 @@ function guarda() {
   title: '<strong>Gracias por tu interes!</strong>',
   //type: 'info',
   html:
-    '<h3 id="cf"><a href="http://neuroestrategias.com/html/aonc.html" target="_blank">Más Información.</a></h3>' ,
+    //'<h3 id="cf"><a href="http://neuroestrategias.com/html/aonc.html" target="_blank">Más Información.</a></h3>' 
+    '<h3 id="cf">estaremos en contacto</h3>',
 
   showCloseButton: true,
  // focusConfirm: false,
