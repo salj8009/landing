@@ -1,2 +1,2 @@
 # landing
-Landing Page
+Landing Page Workshop: Potencializa tu rendimiento SALUDABLE-MENTE
