@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300|Squada+One&display=swap');
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "areaUno areaUno areaDos areaDos" 
+                 "areaUno areaUno areaDos areaDos";
+ /* height: 100vh;*/
+}
+.areaUno { grid-area: areaUno; 
+  /*background-color: #FFFFFF;*/
+ /* height: 100vh; */
+    background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent
+     );
+}
+
+.logo {
+    height: 10%;
+
+}
+h1 {
+    font-family: 'Squada One', cursive;
+    font-size: 6vw;
+    margin: .2em;
+    text-align: center;
+}
+h2 {
+  font-family: 'Squada One', cursive;
+  text-align: center;
+  font-size: 2.7em;
+  margin: .5em;
+}
+
+h3 {
+  font-family: 'Squada One', cursive;
+  font-size: 40px;
+  margin-top: 3.5em;
+  margin-bottom: 2em;
+  color: #FFFFFF; 
+}
+:root {
+  --mainColor: #ff9800;
+}
+ a{
+  color: #006232;
+  font-family: 'Squada One', cursive;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-shadow:1px 2px 2px #000000;
+  text-decoration: none;
+}
+
+#cf, a:hover {
+  background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent
+     );
+}
+
+
+ul, li {
+  list-style-type: disc;
+  line-height:1.6em;
+}
+.texto {
+  font-family: 'Montserrat', sans-serif;
+  margin: 1.5em;
+  font-size: 2em;
+}
+.txtParrafo {
+  margin-top: 1em;
+}
+
+.textoAreaDos {
+  font-family: 'Montserrat', sans-serif;
+  margin: 1.5em;
+  font-size: 2em;
+  color: #FFFFFF;
+}
+#img {
+    width:300px;
+    height:300px;
+    border-radius:150px;
+}
+strong {
+  font-family: 'Squada One', cursive;
+  font-weight: 4em;
+  text-shadow: 1px 1px .1px #06204A;
+}
+.ingresaDatos {
+  border: solid 1px;
+  -moz-box-shadow: 1px 2px 4px #ede8ed;
+  -webkit-box-shadow: 1px 2px 4px #ede8ed;
+  box-shadow: 1px 2px 4px #699F93;
+  font-family: 'Squada One', cursive;
+  font-size: 2em;
+  text-align: center;
+  padding-top: .5em;
+    padding-bottom: .5em; 
+  margin-top: 1.5em;
+    width: 70%;
+
+}
+
+.areaDos { grid-area: areaDos; 
+  background-image: url("../img/crowd-participating-at-event.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /*codigo para oscurecer la imagen de fondo con css*/
+  background-color: rgb(40, 40, 40);
+  background-blend-mode: soft-light;
+  /*background-blend-mode: luminosity;*/
+  text-align: center;
+}
+#miBoton {    
+  background-color: #233438;
+  color: #ffff;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    font-family: 'Squada One', cursive;
+    font-size: 1.6em;
+    padding: 1em;
+    width: 50%;
+}
+
+
+
+/*Media Queries*/
+
+/* Smartphones (portrait and landscape) ———– */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "areaUno areaUno areaUno areaUno" 
+                 "areaDos areaDos areaDos areaDos";
+  height: 100vh;
+}
+  h1 {
+    font-family: 'Squada One', cursive;
+    font-size: 40px;
+    margin: .7em;
+    text-align: center
+  }
+  .texto {
+    font-family: 'Montserrat', sans-serif;
+    margin: 1.5em;
+    font-size: 1.5em;
+  }
+  .ingresaDatos {
+    font-size: 1.2em;
+  }
+}
+/* Smartphones (landscape) ———– */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+}
+/* Smartphones (portrait) ———– */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+}
+/* iPads (portrait and landscape) ———– */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+  h1 {
+    font-family: 'Squada One', cursive;
+    font-size: 70px;
+    margin: .7em;
+    text-align: center;
+    padding-bottom: 2em;
+  }
+  .texto {
+    font-family: 'Montserrat', sans-serif;
+    margin: 1.5em;
+    font-size: 1.5em;
+  }
+  .ingresaDatos {
+    font-size: 1.2em;
+  }
+}
+/* iPads (landscape) ———– */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+}
+/* iPads (portrait) ———– */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+}
+/* Desktops and laptops ———– */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
+/* Large screens ———– */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
+/* iPhone 4 ———– */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}/* Smartphones (portrait and landscape) ———– */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+}
+/* Smartphones (landscape) ———– */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+}
+/* Smartphones (portrait) ———– */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+}
+/* iPads (portrait and landscape) ———– */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+}
+/* iPads (landscape) ———– */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+}
+/* iPads (portrait) ———– */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+}
+/* Desktops and laptops ———– */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
+/* Large screens ———– */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
+/* iPhone 4 ———– */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
